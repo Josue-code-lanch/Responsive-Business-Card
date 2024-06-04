@@ -1,0 +1,120 @@
+:root {
+  --color-primario: #ffffff;
+  --background: #f2f5f9;
+  --texto-1: #111729;
+  --texto-2: #677489;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  margin: 0 auto;
+  width: 400px;
+  background-color: var(--color-primario);
+  border-radius: 10px;
+}
+
+.card-img {
+  background-image: url(img/hero-image-business-card.png);
+  background-size: cover;
+  max-width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+}
+.card-img svg {
+  position: relative;
+  top: 185px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 0px 30px;
+  margin: 0;
+  max-width: 100%;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: var(--texto-2);
+  padding: 10px 30px 10px 30px;
+  max-width: 100%;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+svg {
+  max-width: 100%;
+}
+
+hr {
+  border: 1px var(--background) solid;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.avatar-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 5px var(--background) solid;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+.data h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.data p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+.data h2,
+.data p {
+  padding: 0;
+  line-height: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  .card-img {
+    background-size: cover;
+  }
+  .card-img svg {
+    position: relative;
+    top: 196px;
+  }
+}
